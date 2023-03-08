@@ -86,14 +86,16 @@
 .benefits {
     width: 1168px;
     height: 253px;
-    border: 1px solid #000;
     margin: 0 auto;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 .item_1 {
     display: flex;
     width: 327px;
     height: 74px;
+    margin-bottom:100px ;
 }
 .photo {
 }
@@ -121,11 +123,13 @@
     display: flex;
     width: 330px;
     height: 74px;
+    margin-bottom:100px ;
 }
 .item_3 {
     display: flex;
     width: 367px;
     height: 74px;
+    margin-bottom:100px ;
 }
 .item_4 {
     display: flex;
@@ -141,4 +145,74 @@
     display: flex;
     width: 327px;
     height: 74px;
+}
+.second-info-blok__text {
+    font-family: 'Kaushan Script';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    color: #333333;
+    margin-bottom:20px;
+}
+.second-info-blok__text-2 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    font-variant: all-small-caps;
+    color: #333333;
+    margin-bottom: 40px;
+}
+.second-info-blok__element {
+    width: 60px;
+    height: 4px;
+    background-color: #F38181;
+    margin: 0 auto;
+}
+.second-info-blok {
+    width: 275px;
+    height: 136px;
+    margin: 68px auto;
+    text-align: center;
+}
+.text {
+    text-align: center;
+    color: #B6B6B6;
+}
+.men {
+    width: 1210px;
+}
+.first__men {
+}
+.second__men {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.third__men {
+}
+.men-text {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 17px;
+    text-align: center;
+    font-variant: all-small-caps;
+    color: #333333;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+.men-info {
+    font-family: 'Roboto';
+    font-style: italic;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+    color: #B6B6B6;
+}
+.first__men {
+}
+.first__men:hover{
+
 }
