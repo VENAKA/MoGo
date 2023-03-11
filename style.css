@@ -8,11 +8,25 @@
 }
 /* HEADER-START */
 .header {
-    max-width: 1200px;
-    margin: 17px  auto;
+    margin: px  auto;
     display: flex;
     justify-content: space-between;
     color:#95E1D3;
+    width: 100%;
+    background-color: #1d1c1c;
+    display: flex;
+    align-items: center;
+    height: 100px;
+    padding: 0px 70px;
+    animation: he-ad 2s linear alternate;
+}
+@keyframes he-ad{
+    0%{
+
+    }
+    100%{
+        transform: scaleY(1.2);
+    }
 }
 .MoGo {
     font-family: 'Montserrat';
@@ -81,7 +95,20 @@
     width: 60px;
     height: 4px;
     background-color: #F38181;
+    animation-name: info-blok__element;
+    animation:info-blok__element 4s cubic-bezier(0.39, 0.575, 0.565, 1) infinite alternate-reverse;
     margin: 0 auto;
+}
+@keyframes info-blok__element{
+    0%{
+        transform: translateX(-100px);
+    }
+    50%{
+        background-color: #763f3f;
+    }
+    100%{
+        transform: translateX(100px);
+    }
 }
 .benefits {
     width: 1168px;
@@ -94,10 +121,22 @@
 .item_1 {
     display: flex;
     width: 327px;
-    height: 74px;
+    height: 90px;
     margin-bottom:100px ;
+    background-color: #533030;
+    padding: 5px;
+    border-radius: 5px;
 }
 .photo {
+    animation: fotochki 2s cubic-bezier(0.455, 0.03, 0.515, 0.955) alternate infinite;
+}
+@keyframes fotochki{
+    0%{
+        transform: translateY(-5px);
+    }
+    100%{
+        transform: translateY(50px);
+    }
 }
 .item-text {
     font-family: 'Montserrat';
@@ -107,6 +146,18 @@
     line-height: 17px;
     font-variant: small-caps;
     color: #333333;
+    animation: photoghraph 2s linear alternate infinite;
+}
+@keyframes photoghraph{
+    0%{
+        transform: translateX(5px);color: #393838;
+    }
+    50%{
+        transform:  translateX(1px); color: #908c8c;
+    }
+    100%{
+        transform: translateX(2px);color: #ffffff;
+    }
 }
 .item-info {
     font-family: 'Roboto';
@@ -122,29 +173,44 @@
 .item_2 {
     display: flex;
     width: 330px;
-    height: 74px;
+    height: 90px;
     margin-bottom:100px ;
+    background-color: #533030;
+    padding: 5px;
+    border-radius: 5px;
 }
 .item_3 {
     display: flex;
     width: 367px;
-    height: 74px;
+    height: 90px;
     margin-bottom:100px ;
+    background-color: #533030;
+    padding: 5px;
+    border-radius: 5px;
 }
 .item_4 {
     display: flex;
     width: 327px;
-    height: 74px;
+    height: 90px;
+    background-color: #533030;
+    padding: 3px;
+    border-radius: 5px;
 }
 .item_5 {
     display: flex;
     width: 327px;
-    height: 74px;
+    height: 90px;
+    background-color: #533030;
+    padding: 5px;
+    border-radius: 5px;
 }
 .item_6 {
     display: flex;
     width: 327px;
-    height: 74px;
+    height: 90px;
+    background-color: #533030;
+    padding: 5px;
+    border-radius: 10px;
 }
 .second-info-blok__text {
     font-family: 'Kaushan Script';
@@ -216,20 +282,6 @@
 .first-men {
     cursor: pointer;
 }
-.first-men::after{
-    content:'';
-    width: 0%;
-    position: absolute;
-    height: 0%;
-    background:linear-gradient(180deg, rgba(239, 139, 138, 0.8) 0%, rgba(229, 207, 130, 0.8) 100%);;
-    left: 0;
-    transition: 0.4s;
-}
-.first-men:hover::after{
-    transition: 0,1s;
-    width: 100%;
-    height: 100%;
-}
 .element {
     width: 1210px;
     border: 1px solid #000;
@@ -277,4 +329,24 @@
     font-variant: all-small-caps;
     color: #FFFFFF;
 }
-Х
+.element__foto { 
+    width: 380px;
+    height: 470px;
+}
+body{
+    animation: tilo 4s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite alternate;
+}
+@keyframes tilo{
+    0%{
+        background-color:#FFFF;
+    }
+    35%{
+        background-color: rgb(151, 186, 186);
+    }
+    65%{
+        background-color: #97eabf;
+    }
+    100%{
+        background-color: #7bb195;
+    }
+}
