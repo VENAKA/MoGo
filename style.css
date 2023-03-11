@@ -19,6 +19,9 @@
     height: 100px;
     padding: 0px 70px;
     animation: he-ad 2s linear alternate;
+    position: fixed;
+    z-index: 100;
+    top: 0;
 }
 @keyframes he-ad{
     0%{
@@ -71,7 +74,7 @@
 .info-blok {
     width: 275px;
     height: 136px;
-    margin: 68px auto;
+    margin: 150px auto;
     text-align: center;
 }
 .info-blok__text_1 {
@@ -348,5 +351,50 @@ body{
     }
     100%{
         background-color: #7bb195;
+    }
+}
+.wawe {
+    width: 1200px;
+    background-image: url(./img/wawe.png);
+    height: 120px;
+    background-size: contain;
+    position: relative;
+    overflow: hidden;
+}
+.wawe-2 {
+    width: 100%;
+    height: 86px;
+    bottom: 0;
+    background-image: url(./img/wawe.png);
+    background-size: contain;
+    position: absolute;
+    z-index: 2;
+    animation: volna-2 2s linear infinite alternate;
+}
+@keyframes volna-2{
+    0%{
+        transform: translateX(-20px);
+    }
+    100%{
+        transform: translateX(20px);
+    }
+}
+
+.wawe-3 {
+    width: 100%;
+    height: 65px;
+    bottom: 0;
+    background-image: url(./img/wawe.png);
+    background-size: contain;
+    position: absolute;
+    z-index: 1;
+    animation:volna-3 1s linear infinite alternate ;
+}
+@keyframes volna-3{
+    0%{
+        transform: translateX(20px);
+    }
+    100%{
+        transform: translateX(-20px);
     }
 }
